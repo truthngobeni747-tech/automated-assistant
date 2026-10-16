@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Industrial Brick Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Urgency Ticker -->
+    <div class="ticker-wrap">
+        <div class="ticker">
+            <span>🔥 PRODUCTION UPDATE: Batch #M20 (7MPa Maxi) is 85% booked out.</span>
+            <span>⚡ Next batch clears curing cycle in <strong id="countdown-timer">04d 12h 45m</strong>.</span>
+        </div>
+    </div>
+
+    <!-- Main Workspace Container -->
+    <main class="pitch-container">
+        
+        <!-- Product / Authority Card -->
+        <section class="product-card">
+            <div class="badge-row">
+                <span class="badge strength-badge">10MPa CERTIFIED</span>
+                <span class="badge status-badge">LOAD-BEARING</span>
+            </div>
+            
+            <h1 class="product-title">Premium Concrete Maxi Block</h1>
+            <p class="product-specs">Dimensions: 290mm × 140mm × 90mm | Weight: 4.8kg / unit</p>
+            
+            <div class="image-placeholder">
+                <div class="brick-graphic"></div>
+                <p class="image-caption">Visual proof of clean edges & zero structural micro-cracks</p>
+            </div>
+        </section>
+
+        <!-- The Interactive Logistics Tool -->
+        <section class="calculator-card">
+            <h2 class="section-title">Instant Order & Tonnage Estimator</h2>
+            <p class="section-subtitle">Let contractors calculate their own logistics payloads instantly without blowing up your phone.</p>
+            
+            <div class="form-group">
+                <label for="brick-qty">Enter Number of Bricks Required:</label>
+                <input type="number" id="brick-qty" min="0" placeholder="e.g. 5000" value="2500">
+            </div>
+
+            <!-- Live Output Screen -->
+            <div class="dashboard-display">
+                <div class="metric">
+                    <span class="metric-label">Total Mass</span>
+                    <span class="metric-value" id="mass-output">12.0 Tons</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Required Fleet Size</span>
+                    <span class="metric-value highlight" id="truck-output">Code 10 / 10-Ton Truck</span>
+                </div>
+            </div>
+
+            <div class="alert-box" id="logistics-advice">
+                Perfect payload size for standard site deliveries.
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Total Control Floating CTA -->
+    <div class="floating-cta-wrap">
+        <a href="https://wa.me/27678459186?text=I'm%20interested%20in%20a%20delivery%20quote" class="cta-btn whatsapp-btn" target="_blank">
+            <span>💬 Lock In Delivery Slot</span>
+        </a>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
